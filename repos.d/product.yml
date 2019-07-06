@@ -1,0 +1,4 @@
+datasource:
+  uri: posgresql://deb.postgres:5432/product
+  username: defaultproduct
+  password: defaultproductSecretPassword
