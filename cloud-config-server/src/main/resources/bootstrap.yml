@@ -1,0 +1,28 @@
+server:
+  port: 10040
+
+logging:
+  level:
+    root: INFO
+    org.springframework.cloud: DEBUG
+
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: D:/Workspace/SpringCloud/woonizzooni-spring-cloud-config-concept/repos.d
+    inetutils:
+      ignoredInterfaces:
+        - VirtualBox.*
+        - Hyper-V.*
+        - Npcap.*
+        - VMware.*
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ['refresh']

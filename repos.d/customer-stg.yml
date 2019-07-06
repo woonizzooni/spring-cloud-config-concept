@@ -1,0 +1,4 @@
+datasource:
+  uri: posgresql://stg.postgres:5432/customer
+  username: stgcustomer
+  password: stgcustomerSecretPassword

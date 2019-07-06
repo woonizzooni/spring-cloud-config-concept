@@ -1,0 +1,32 @@
+server:
+  port: 10010
+
+logging:
+  level:
+    root: INFO
+    org.springframework.amqp: DEBUG
+    org.springframework.cloud: DEBUG
+
+spring:
+  cloud:
+    inetutils:
+      ignoredInterfaces:
+        - VirtualBox.*
+        - Hyper-V.*
+        - Npcap.*
+        - VMware.*
+    config:
+      server:
+        git:
+          uri: https://github.com/woonizzooni/spring-config-repo
+  rabbitmq:
+    host: 0.0.0.0
+    port: 5672
+    username: username
+    password: password
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ['refresh']

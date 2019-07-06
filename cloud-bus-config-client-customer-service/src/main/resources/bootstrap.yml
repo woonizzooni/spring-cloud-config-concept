@@ -1,0 +1,30 @@
+server:
+  port: 10020
+
+health:
+  config:
+    enabled: false
+
+logging:
+  level:
+    root: INFO
+    org.springframework.amqp: DEBUG
+    org.springframework.cloud: DEBUG
+
+spring:
+  application:
+    name: customer
+  cloud:
+    config:
+      uri: http://localhost:10010
+  rabbitmq:
+    host: 0.0.0.0
+    port: 5672
+    username: username
+    password: password
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: ['refresh']
