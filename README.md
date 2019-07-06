@@ -1,14 +1,15 @@
 # Getting Started
 
-### Reference Documentation
-For further reference, please consider the following sections:
+* Spring Cloud Config 동작 확인용
+<pre>
+cloud-config-server
+cloud-config-client-customer-service>
+cloud-config-client-product-service
+</pre>
 
-* [Official Gradle documentation](https://docs.gradle.org)
-
-### Additional Links
-These additional references should also help you:
-
-* [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
-
-### Test
-* 
+* Spring Cloud Bus 동작 확인용 (default profile) 
+<pre>
+cloud-bus-config-server
+cloud-bus-config-client-customer-service
+cloud-bus-config-client-product-service
+</pre> 
