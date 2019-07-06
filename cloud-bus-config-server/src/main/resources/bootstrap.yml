@@ -8,17 +8,23 @@ logging:
     org.springframework.cloud: DEBUG
 
 spring:
+  #profiles:
+  #  active: native
   cloud:
+    config:
+      #server:
+      #  native:
+      #    search-locations: D:/Workspace/SpringCloud/woonizzooni-spring-cloud-config-concept/repos.d
+      server:
+        git:
+          uri: https://github.com/woonizzooni/spring-config-repo
     inetutils:
       ignoredInterfaces:
         - VirtualBox.*
         - Hyper-V.*
         - Npcap.*
         - VMware.*
-    config:
-      server:
-        git:
-          uri: https://github.com/woonizzooni/spring-config-repo
+
   rabbitmq:
     host: 0.0.0.0
     port: 5672
