@@ -3,7 +3,7 @@
 * Spring Cloud Config 동작 확인용
 <pre>
 cloud-config-server
-cloud-config-client-customer-service>
+cloud-config-client-customer-service
 cloud-config-client-product-service
 </pre>
 
